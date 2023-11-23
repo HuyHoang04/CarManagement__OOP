@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{7BD5898D-0297-4EA0-A8CA-FA26ABB7AE6F}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CarManagement PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CarManagement/Program.cs">
+    <Files>
+      <File FileName="CarManagement/ReviewClasses/CustomerReview.cs" />
+      <File FileName="CarManagement/SaleOffClasses/SaleOff.cs" Line="20" Column="46" />
+      <File FileName="CarManagement/SaleOffClasses/ISaleOff.cs" />
+      <File FileName="CarManagement/CarClasses/ICar.cs" />
+      <File FileName="CarManagement/ContractClasses/Contract.cs" />
+      <File FileName="CarManagement/CarClasses/Vehicle.cs" />
+      <File FileName="CarManagement/Program.cs" Line="51" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

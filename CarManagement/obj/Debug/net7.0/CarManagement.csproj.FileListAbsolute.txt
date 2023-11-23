@@ -1,0 +1,54 @@
+/Users/nguyenhuudanh/Desktop/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nguyenhuudanh/Desktop/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.AssemblyInfoInputs.cache
+/Users/nguyenhuudanh/Desktop/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.AssemblyInfo.cs
+/Users/nguyenhuudanh/Desktop/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.csproj.CoreCompileInputs.cache
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.AssemblyInfoInputs.cache
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.AssemblyInfo.cs
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.csproj.CoreCompileInputs.cache
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/bin/Debug/net7.0/CarManagement
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/bin/Debug/net7.0/CarManagement.deps.json
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/bin/Debug/net7.0/CarManagement.runtimeconfig.json
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/bin/Debug/net7.0/CarManagement.dll
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/bin/Debug/net7.0/CarManagement.pdb
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.dll
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/refint/CarManagement.dll
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.pdb
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/CarManagement.genruntimeconfig.cache
+/Users/nguyenhuudanh/Desktop/UTEN/2023 - 2024 /Kỳ 1/OOP/CarManagement (1)/CarManagement/obj/Debug/net7.0/ref/CarManagement.dll
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.GeneratedMSBuildEditorConfig.editorconfig
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.AssemblyInfoInputs.cache
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.AssemblyInfo.cs
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.csproj.CoreCompileInputs.cache
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.dll
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\refint\CarManagement.dll
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.pdb
+F:\OOPs1\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.exe
+F:\OOPs1\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.deps.json
+F:\OOPs1\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.runtimeconfig.json
+F:\OOPs1\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.dll
+F:\OOPs1\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.pdb
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.genruntimeconfig.cache
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\ref\CarManagement.dll
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.csproj.AssemblyReference.cache
+F:\OOPs1\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\OfficeOpenXml.Core.ExcelPackage.dll
+F:\OOPs1\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\System.IO.Packaging.dll
+F:\OOPs1\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.csproj.CopyComplete
+D:\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.exe
+D:\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.deps.json
+D:\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.runtimeconfig.json
+D:\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.dll
+D:\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\CarManagement.pdb
+D:\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\OfficeOpenXml.Core.ExcelPackage.dll
+D:\CarManagement (1) (2)\CarManagement\bin\Debug\net7.0\System.IO.Packaging.dll
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.csproj.AssemblyReference.cache
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.AssemblyInfoInputs.cache
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.AssemblyInfo.cs
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.csproj.CoreCompileInputs.cache
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.csproj.CopyComplete
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.dll
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\refint\CarManagement.dll
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.pdb
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\CarManagement.genruntimeconfig.cache
+D:\CarManagement (1) (2)\CarManagement\obj\Debug\net7.0\ref\CarManagement.dll
