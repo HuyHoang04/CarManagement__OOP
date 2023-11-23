@@ -49,6 +49,7 @@
             label2 = new Label();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
+            label7 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)vehiclegridview).BeginInit();
@@ -67,6 +68,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label7);
             tabPage1.Controls.Add(vehiclegridview);
             tabPage1.Controls.Add(levelbox);
             tabPage1.Controls.Add(label11);
@@ -266,6 +268,16 @@
             tabPage3.Text = "Review";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(234, 37);
+            label7.Name = "label7";
+            label7.Size = new Size(237, 46);
+            label7.TabIndex = 30;
+            label7.Text = "ADD VEHICLE";
+            // 
             // ManagerForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -304,5 +316,6 @@
         private TextBox levelbox;
         private Label label11;
         private DataGridView vehiclegridview;
+        private Label label7;
     }
 }
