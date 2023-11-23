@@ -136,16 +136,12 @@ namespace ManagerForm
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            CN.Clear();
-            combobox.Items.Clear();
-            CM.Clear();
+
         }
 
         private void buttonrent_Click(object sender, EventArgs e)
         {
-            new Listrentalguest(CN.Text, CM.Text);
-            CM.Clear();
-            CN.Clear();
+
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -215,7 +211,22 @@ namespace ManagerForm
             pictureBox4.Image = Resources.White_Star;
             pictureBox5.Image = Resources.White_Star;
             pictureBox1.Image = Resources.Yellow_Star;
-            
+
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
 
         }
     }

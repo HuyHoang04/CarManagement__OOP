@@ -50,13 +50,19 @@
             SearchID = new TextBox();
             dataGridView1 = new DataGridView();
             tabPage3 = new TabPage();
+            comboBox3 = new ComboBox();
+            label18 = new Label();
+            label17 = new Label();
+            label16 = new Label();
+            label15 = new Label();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
+            textBox1 = new TextBox();
             dataGridView2 = new DataGridView();
             buttonrent = new Button();
             buttonclear = new Button();
             label10 = new Label();
-            label9 = new Label();
             label8 = new Label();
-            combobox = new ComboBox();
             CM = new TextBox();
             CN = new TextBox();
             tabPage4 = new TabPage();
@@ -321,13 +327,19 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(comboBox3);
+            tabPage3.Controls.Add(label18);
+            tabPage3.Controls.Add(label17);
+            tabPage3.Controls.Add(label16);
+            tabPage3.Controls.Add(label15);
+            tabPage3.Controls.Add(comboBox2);
+            tabPage3.Controls.Add(comboBox1);
+            tabPage3.Controls.Add(textBox1);
             tabPage3.Controls.Add(dataGridView2);
             tabPage3.Controls.Add(buttonrent);
             tabPage3.Controls.Add(buttonclear);
             tabPage3.Controls.Add(label10);
-            tabPage3.Controls.Add(label9);
             tabPage3.Controls.Add(label8);
-            tabPage3.Controls.Add(combobox);
             tabPage3.Controls.Add(CM);
             tabPage3.Controls.Add(CN);
             tabPage3.Location = new Point(4, 29);
@@ -339,22 +351,100 @@
             tabPage3.UseVisualStyleBackColor = true;
             tabPage3.Click += tabPage3_Click;
             // 
+            // comboBox3
+            // 
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.ImeMode = ImeMode.Off;
+            comboBox3.Items.AddRange(new object[] { "FourSeatsCar", "Motobike", "PracticeDrivingCar", "TouristCar", "WeddingCar" });
+            comboBox3.Location = new Point(371, 105);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(265, 28);
+            comboBox3.TabIndex = 17;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(371, 161);
+            label18.Name = "label18";
+            label18.Size = new Size(105, 20);
+            label18.TabIndex = 16;
+            label18.Text = "Sale-off CODE";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(371, 70);
+            label17.Name = "label17";
+            label17.Size = new Size(81, 20);
+            label17.TabIndex = 15;
+            label17.Text = "Hire Driver";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(74, 261);
+            label16.Name = "label16";
+            label16.Size = new Size(69, 20);
+            label16.TabIndex = 14;
+            label16.Text = "Day Rent";
+            label16.Click += label16_Click;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(371, 261);
+            label15.Name = "label15";
+            label15.Size = new Size(61, 20);
+            label15.TabIndex = 13;
+            label15.Text = "Deposit";
+            label15.Click += label15_Click;
+            // 
+            // comboBox2
+            // 
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.ImeMode = ImeMode.Off;
+            comboBox2.Items.AddRange(new object[] { "FourSeatsCar", "Motobike", "PracticeDrivingCar", "TouristCar", "WeddingCar" });
+            comboBox2.Location = new Point(371, 301);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(265, 28);
+            comboBox2.TabIndex = 12;
+            // 
+            // comboBox1
+            // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.ImeMode = ImeMode.Off;
+            comboBox1.Items.AddRange(new object[] { "FourSeatsCar", "Motobike", "PracticeDrivingCar", "TouristCar", "WeddingCar" });
+            comboBox1.Location = new Point(371, 196);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(265, 28);
+            comboBox1.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(74, 302);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(265, 27);
+            textBox1.TabIndex = 10;
+            // 
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(444, 43);
+            dataGridView2.Location = new Point(775, 43);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.RowTemplate.Height = 29;
-            dataGridView2.Size = new Size(603, 382);
+            dataGridView2.Size = new Size(272, 382);
             dataGridView2.TabIndex = 9;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // buttonrent
             // 
-            buttonrent.Location = new Point(261, 388);
+            buttonrent.Location = new Point(422, 388);
             buttonrent.Name = "buttonrent";
-            buttonrent.Size = new Size(102, 52);
+            buttonrent.Size = new Size(141, 37);
             buttonrent.TabIndex = 8;
             buttonrent.Text = "Rent";
             buttonrent.UseVisualStyleBackColor = true;
@@ -362,9 +452,9 @@
             // 
             // buttonclear
             // 
-            buttonclear.Location = new Point(96, 388);
+            buttonclear.Location = new Point(139, 388);
             buttonclear.Name = "buttonclear";
-            buttonclear.Size = new Size(102, 52);
+            buttonclear.Size = new Size(141, 37);
             buttonclear.TabIndex = 7;
             buttonclear.Text = "Clear";
             buttonclear.UseVisualStyleBackColor = true;
@@ -374,56 +464,35 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(72, 264);
+            label10.Location = new Point(70, 158);
             label10.Name = "label10";
-            label10.Size = new Size(93, 23);
+            label10.Size = new Size(37, 23);
             label10.TabIndex = 6;
-            label10.Text = "Car Model";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(72, 158);
-            label9.Name = "label9";
-            label9.Size = new Size(105, 23);
-            label9.TabIndex = 5;
-            label9.Text = "Type Of Car";
+            label10.Text = "Car";
+            label10.Click += label10_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(72, 67);
+            label8.Location = new Point(70, 67);
             label8.Name = "label8";
             label8.Size = new Size(139, 23);
             label8.TabIndex = 4;
             label8.Text = "Customer Name";
             // 
-            // combobox
-            // 
-            combobox.DropDownStyle = ComboBoxStyle.DropDownList;
-            combobox.FormattingEnabled = true;
-            combobox.ImeMode = ImeMode.Off;
-            combobox.Items.AddRange(new object[] { "FourSeatsCar", "Motobike", "PracticeDrivingCar", "TouristCar", "WeddingCar" });
-            combobox.Location = new Point(70, 196);
-            combobox.Name = "combobox";
-            combobox.Size = new Size(325, 28);
-            combobox.TabIndex = 3;
-            combobox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
             // CM
             // 
-            CM.Location = new Point(70, 301);
+            CM.Location = new Point(72, 196);
             CM.Name = "CM";
-            CM.Size = new Size(325, 27);
+            CM.Size = new Size(265, 27);
             CM.TabIndex = 2;
             // 
             // CN
             // 
             CN.Location = new Point(70, 106);
             CN.Name = "CN";
-            CN.Size = new Size(325, 27);
+            CN.Size = new Size(265, 27);
             CN.TabIndex = 0;
             // 
             // tabPage4
@@ -696,9 +765,7 @@
         private Button clearbutton;
         private TextBox CM;
         private TextBox CN;
-        private ComboBox combobox;
         private Label label10;
-        private Label label9;
         private Label label8;
         private Button buttonrent;
         private Button buttonclear;
@@ -722,5 +789,13 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox1;
+        private TextBox textBox1;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private Label label18;
+        private ComboBox comboBox3;
     }
 }

@@ -4,6 +4,7 @@
     private DateTime daterental;
     private bool hiredriver;
     private Vehicle vehicle;
+    private int timerent;
     private List <CostsIncurred> costsIncurred ;
     private Owner owner;
     private RentalGuest rentalGuest;
@@ -34,19 +35,16 @@
         set { rentalGuest = value; }
     }
 
-    public Contract(double deposit, string daterental, bool hiredriver, Vehicle vehicle, List<CostsIncurred> costsIncurred, Owner owner, RentalGuest rentalGuest, SaleOff saleoff, CustomerReview customerReview, OwnerReview ownerReview, ReviewForCar reviewForCar)
+    public Contract(double deposit, string daterental, bool hiredriver, Vehicle vehicle, Owner owner, RentalGuest rentalGuest, SaleOff saleoff, int timerent)
     {
         this.deposit = deposit;
         this.daterental = ToDateTime.Convert(daterental);
         this.hiredriver = hiredriver;
         this.vehicle = vehicle;
-        this.costsIncurred = costsIncurred;
         this.owner = owner;
         this.rentalGuest = rentalGuest;
         this.saleoff = saleoff;
-        this.customerReview = customerReview;
-        this.ownerReview = ownerReview;
-        this.reviewForCar = reviewForCar;
+        this.timerent = timerent;
         counts++;
     }
     public double Rentpriceinconstract()
@@ -57,7 +55,7 @@
         {
             hiredrivercost = 5000000;
         }
-        return vehicle.rentcostofcar() + (vehicle.rentcostofcar()* saleoff.Persent() ) + hiredrivercost;
+        return vehicle.rentcostofcar(timerent) + (vehicle.rentcostofcar(timerent)* saleoff.Persent() ) + hiredrivercost;
     }
     public void InfoConstract()
     {
@@ -81,6 +79,9 @@
         }
         return Rentpriceinconstract() + totalincludeprice;
     }
-    
+    public void AddCostIncurred(CostsIncurred Incurr)
+    {
+        costsIncurred.Add(Incurr);
+    }
     
 }

@@ -9,11 +9,11 @@ namespace WinFormsApp1
     {
         List<CostsIncurred> costsIncurreds = new List<CostsIncurred>();
 
-        FourSeatsCar MazdaCX5 = new FourSeatsCar(2, "Travel", "Mazda", 2014, 2200, 1, 100000);
-        Motobike Vision = new Motobike(2, "Travel", "Honda", 2019, 990, 3, 160000);
-        PracticeDrivingCar Toyota = new PracticeDrivingCar(3, "Practice", "Honda Civic", 2019, 1200, 3, 160000);
-        TouristCar Hyundai = new TouristCar(2, "Travel", "Ford Transit", 2020, 2000, 5, 350000);
-        WeddingCar Camry = new WeddingCar(1, "Wedding", "Toyota Camry", 2018, 3000, 2, 150000);
+        FourSeatsCar MazdaCX5 = new FourSeatsCar(2, "Travel", "Mazda", 2014, 2200, 100000);
+        Motobike Vision = new Motobike(2, "Travel", "Honda", 2019, 990, 160000);
+        PracticeDrivingCar Toyota = new PracticeDrivingCar(3, "Practice", "Honda Civic", 2019, 1200, 160000);
+        TouristCar Hyundai = new TouristCar(2, "Travel", "Ford Transit", 2020, 2000, 350000);
+        WeddingCar Camry = new WeddingCar(1, "Wedding", "Toyota Camry", 2018, 3000, 150000);
 
         Owner Hoang = new Owner("La Huy Hoang", 0382004367, "10/01/1967", "DaLat", "0363892999");
 
@@ -41,11 +41,11 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Contract CarRental = new Contract(500000, "01/11/2023", true, MazdaCX5, costsIncurreds, Hoang, guest1, Summer, guest1review, HoangReview, reviewforWeddingCar);
-            Contract CarRental2 = new Contract(600000, "05/12/2023", true, Vision, costsIncurreds, Hoang, guest2, Summer, guest2review, HoangReview, reviewforMotbike);
-            Contract CarRental3 = new Contract(700000, "20/01/2024", true, Toyota, costsIncurreds, Hoang, guest3, Summer, guest3review, HoangReview, reviewforPracticeCar);
-            Contract CarRental4 = new Contract(800000, "15/03/2024", true, Hyundai, costsIncurreds, Hoang, guest4, Summer, guest4review, HoangReview, reviewforTouristCar);
-            Contract CarRental5 = new Contract(900000, "10/05/2024", true, Camry, costsIncurreds, Hoang, guest5, Summer, guest5review, HoangReview, reviewforFourseatCar);
+            //Contract CarRental = new Contract(500000, "01/11/2023", true, MazdaCX5, costsIncurreds, Hoang, guest1, Summer, guest1review, HoangReview, reviewforWeddingCar);
+            //Contract CarRental2 = new Contract(600000, "05/12/2023", true, Vision, costsIncurreds, Hoang, guest2, Summer, guest2review, HoangReview, reviewforMotbike);
+            //Contract CarRental3 = new Contract(700000, "20/01/2024", true, Toyota, costsIncurreds, Hoang, guest3, Summer, guest3review, HoangReview, reviewforPracticeCar);
+            //Contract CarRental4 = new Contract(800000, "15/03/2024", true, Hyundai, costsIncurreds, Hoang, guest4, Summer, guest4review, HoangReview, reviewforTouristCar);
+            //Contract CarRental5 = new Contract(900000, "10/05/2024", true, Camry, costsIncurreds, Hoang, guest5, Summer, guest5review, HoangReview, reviewforFourseatCar);
 
         }
 

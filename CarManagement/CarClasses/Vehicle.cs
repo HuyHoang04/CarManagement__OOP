@@ -6,7 +6,6 @@
     protected int buyyear;
     protected int kmgo;
     protected int insurant;
-    protected int timerentcar;
     public static List<Vehicle> All = new List<Vehicle>();
     protected int cartypestandardmoney = 5000000;
     public string Nampurpose
@@ -18,25 +17,24 @@
         get { return brand; } 
     }
 
-    public Vehicle(int cartype, string namepurpose, string brand, int buyyear, int kmgo,int timerentcar, int insurant)
+    public Vehicle(int cartype, string namepurpose, string brand, int buyyear, int kmgo, int insurant)
     {
         this.cartype = cartype;
         this.namepurpose = namepurpose;
         this.brand = brand;
         this.buyyear = (int)DateTime.Now.Year - buyyear;
         this.kmgo = kmgo;
-        this.timerentcar = timerentcar;
         this.insurant = insurant;
         All.Add(this);
 
     }
-    public virtual double rentcostofcar()
+    public virtual double rentcostofcar(int timerentcar)
     {
         return 0;
     }
     public string Display()
     {
-        return $"Cartype: {cartype}, Namepurpose: {namepurpose} Brand: {brand} Buyyear: {buyyear} Kmgo: {kmgo} Insurant: {insurant} Timerentcar: {timerentcar}           ";
+        return $"Cartype: {cartype}, Namepurpose: {namepurpose} Brand: {brand} Buyyear: {buyyear} Kmgo: {kmgo} Insurant: {insurant} ";
     }
     public int VehicleInstock()
     {
