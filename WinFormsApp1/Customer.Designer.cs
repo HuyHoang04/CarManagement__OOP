@@ -106,10 +106,10 @@
             Createprofile.Controls.Add(tabPage2);
             Createprofile.Controls.Add(tabPage3);
             Createprofile.Controls.Add(tabPage4);
-            Createprofile.Location = new Point(3, 2);
+            Createprofile.Location = new Point(3, 3);
             Createprofile.Name = "Createprofile";
             Createprofile.SelectedIndex = 0;
-            Createprofile.Size = new Size(1100, 511);
+            Createprofile.Size = new Size(1100, 510);
             Createprofile.TabIndex = 0;
             // 
             // tabPage1
@@ -268,7 +268,7 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1092, 478);
+            tabPage2.Size = new Size(1092, 477);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Search";
             tabPage2.UseVisualStyleBackColor = true;
@@ -713,7 +713,6 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             ClientSize = new Size(1107, 522);
             Controls.Add(Createprofile);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Customerform";
             Text = "Form1";
             Load += Customerform_Load;

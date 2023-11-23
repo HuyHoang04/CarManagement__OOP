@@ -18,7 +18,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
-            
+
 
         }
 
@@ -76,7 +76,6 @@
             BackColor = Color.FromArgb(119, 107, 93);
             ClientSize = new Size(1297, 597);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Menu";
             Text = "Menu";
             panel1.ResumeLayout(false);
