@@ -1,6 +1,6 @@
 ﻿public class SaleOff 
 {
-    protected string title;
+    public string title;
     protected string description;
     protected DateTime startDate;
     protected DateTime endDate;

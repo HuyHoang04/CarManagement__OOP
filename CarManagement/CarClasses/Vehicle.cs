@@ -8,14 +8,34 @@
     protected int insurant;
     public static List<Vehicle> All = new List<Vehicle>();
     protected int cartypestandardmoney = 5000000;
+
+    public int Cartype
+    {
+        get { return cartype; }
+    }
     public string Nampurpose
     {
-        get { return namepurpose; } 
+        get { return namepurpose; }
     }
     public string Brand
-    { 
-        get { return brand; } 
+    {
+        get { return brand; }
     }
+    public int Buyyear
+    {
+        get { return buyyear; }
+    }
+    public int Kmgo
+    {
+        get { return kmgo; }
+    }
+    public int Insurant
+    {
+        get { return insurant; }
+    }
+   
+  
+
 
     public Vehicle(int cartype, string namepurpose, string brand, int buyyear, int kmgo, int insurant)
     {
