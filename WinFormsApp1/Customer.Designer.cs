@@ -130,7 +130,7 @@
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1092, 478);
+            tabPage1.Size = new Size(1092, 477);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "New Register";
             tabPage1.UseVisualStyleBackColor = true;
@@ -345,7 +345,7 @@
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1092, 478);
+            tabPage3.Size = new Size(1092, 477);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Rent";
             tabPage3.UseVisualStyleBackColor = true;
@@ -421,6 +421,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(265, 28);
             comboBox1.TabIndex = 11;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged_1;
             // 
             // textBox1
             // 
@@ -519,7 +520,7 @@
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(1092, 478);
+            tabPage4.Size = new Size(1092, 477);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Review";
             tabPage4.UseVisualStyleBackColor = true;
