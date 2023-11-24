@@ -9,13 +9,12 @@ namespace WinFormsApp1
     {
         List<CostsIncurred> costsIncurreds = new List<CostsIncurred>();
 
-        FourSeatsCar MazdaCX5 = new FourSeatsCar(2, "Travel", "Mazda", 2014, 2200, 100000);
-        Motobike Vision = new Motobike(2, "Travel", "Honda", 2019, 990, 160000);
-        PracticeDrivingCar Toyota = new PracticeDrivingCar(3, "Practice", "Honda Civic", 2019, 1200, 160000);
-        TouristCar Hyundai = new TouristCar(2, "Travel", "Ford Transit", 2020, 2000, 350000);
-        WeddingCar Camry = new WeddingCar(1, "Wedding", "Toyota Camry", 2018, 3000, 150000);
+        FourSeatsCar MazdaCX5 = new FourSeatsCar(2, "Travel", "Mazda", 2014, 2200, 100000,1);
+        Motobike Vision = new Motobike(2, "Travel", "Honda", 2019, 990, 160000,1);
+        PracticeDrivingCar Toyota = new PracticeDrivingCar(3, "Practice", "Honda Civic", 2019, 1200, 160000,1);
+        TouristCar Hyundai = new TouristCar(2, "Travel", "Ford Transit", 2020, 2000, 350000,1);
+        WeddingCar Camry = new WeddingCar(1, "Wedding", "Toyota Camry", 2018, 3000, 150000,1);
 
-        Owner Hoang = new Owner("La Huy Hoang", 0382004367, "10/01/1967", "DaLat", "0363892999");
 
         RentalGuest guest1 = new RentalGuest("Nguyen Huu Danh", 0682004862, "20/04/1999", "DaLat", "0979897979");
         RentalGuest guest2 = new RentalGuest("Tran Thanh Vy", 0938475612, "15/08/1995", "Nha Trang", "0987654321");

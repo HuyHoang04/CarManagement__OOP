@@ -1,10 +1,9 @@
-﻿public class HolidayPromotion : SaleOff, ISaleOff
+﻿public class HolidayPromotion : SaleOff
 {
     private string occasion;
     public string Occasion
     {
         get { return occasion; }
-        set { occasion = value; }
     }
     public HolidayPromotion(string occasion, string title, string description, string startDate, string endDate, int discountPercentage) : base(title, description, startDate, endDate, discountPercentage)
     {

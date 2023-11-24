@@ -1,11 +1,37 @@
 ﻿public class SaleOff 
 {
-    protected string title;
+    public string title;
     protected string description;
     protected DateTime startDate;
     protected DateTime endDate;
     protected int discountPercentage;
     public static List<SaleOff> Sale = new List<SaleOff>();
+
+    public string Title
+    {
+        get { return title; } 
+    }
+
+    public string Description
+    {
+        get { return description; }
+    }
+
+    public string StartDate
+    {
+        get { return ToDateTime.ConvertToString(startDate); }
+    }
+
+    public string EndDate
+    {
+        get { return ToDateTime.ConvertToString(endDate); }
+    }
+
+    public int DiscountPercentage
+    {
+        get { return discountPercentage;}
+    }
+
     public SaleOff (string title, string description, string startDate, string endDate, int discountPercentage)
     {
         this.title = title;

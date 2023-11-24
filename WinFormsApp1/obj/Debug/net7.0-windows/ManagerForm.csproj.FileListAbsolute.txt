@@ -105,3 +105,5 @@ C:\Users\HALO\Desktop\DSA\Test OOP\Hoang\CarManagement__OOP\WinFormsApp1\obj\Deb
 C:\Users\HALO\Desktop\DSA\Test OOP\Hoang\CarManagement__OOP\WinFormsApp1\obj\Debug\net7.0-windows\ManagerForm.pdb
 C:\Users\HALO\Desktop\DSA\Test OOP\Hoang\CarManagement__OOP\WinFormsApp1\obj\Debug\net7.0-windows\ManagerForm.genruntimeconfig.cache
 C:\Users\HALO\Desktop\DSA\Test OOP\Hoang\CarManagement__OOP\WinFormsApp1\obj\Debug\net7.0-windows\ref\ManagerForm.dll
+F:\OOPs1\CarManagement\CarManagement (1) (2)\WinFormsApp1\obj\Debug\net7.0-windows\ManagerForm.Form1.resources
+C:\Users\HALO\Desktop\DSA\Test OOP\Hoang\CarManagement__OOP\WinFormsApp1\obj\Debug\net7.0-windows\ManagerForm.Form1.resources

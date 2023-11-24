@@ -141,7 +141,31 @@ namespace ManagerForm
 
         private void buttonrent_Click(object sender, EventArgs e)
         {
+            string tid = FindIdBox.Text;
+            string thiredriver = HiredriverBox.Text;
+            string tdeposit = DepositBox.Text;
+            string ttimerent = TimeRentBox.Text;
 
+            int id = Int32.Parse(tid);
+            string car = FindCarBox.Text;
+            string dayrent = DayRentBox.Text;
+            bool hiredriver = false;
+            if (thiredriver == "Yes") hiredriver = true;
+            string salecode = SaleCode.Text;
+            int timerent = Int32.Parse(ttimerent);
+            double deposit = Convert.ToDouble(tdeposit);
+
+            RentalGuest RentG = RentalGuest.All.Find(x => x.ID == id);
+            Vehicle vehicle = Vehicle.All.Find(x => x.Brand == car);
+            SaleOff sale = SaleOff.Sale.Find(x => x.title == salecode);
+            Owner Hoang = new Owner("Hoang", 4567890, "34/12/2003", "23 NewYork streets", "23456789");
+            new Contract(deposit, dayrent, hiredriver, vehicle, Hoang, RentG, sale, timerent);
+
+            FindIdBox.Clear();
+            DepositBox.Clear();
+            TimeRentBox.Clear();
+            FindCarBox.Clear();
+            DayRentBox.Clear();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -231,6 +255,21 @@ namespace ManagerForm
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Createprofile_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }

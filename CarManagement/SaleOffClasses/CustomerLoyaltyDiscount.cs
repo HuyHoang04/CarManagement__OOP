@@ -1,4 +1,4 @@
-﻿public class CustomerLoyaltyDiscount : SaleOff, ISaleOff
+﻿public class CustomerLoyaltyDiscount : SaleOff
 {
     public CustomerLoyaltyDiscount ( string title, string description, string startDate, string endDate, int discountPercentage) : base(title, description, startDate, endDate, discountPercentage)
     {
