@@ -50,21 +50,19 @@
             SearchID = new TextBox();
             dataGridView1 = new DataGridView();
             tabPage3 = new TabPage();
-            comboBox3 = new ComboBox();
+            HiredriverBox = new ComboBox();
             label18 = new Label();
             label17 = new Label();
             label16 = new Label();
             label15 = new Label();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            dataGridView2 = new DataGridView();
+            SaleCode = new ComboBox();
+            DayRentBox = new TextBox();
             buttonrent = new Button();
             buttonclear = new Button();
             label10 = new Label();
             label8 = new Label();
-            CM = new TextBox();
-            CN = new TextBox();
+            FindCarBox = new TextBox();
+            FindIdBox = new TextBox();
             tabPage4 = new TabPage();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -85,12 +83,14 @@
             dataGridView3 = new DataGridView();
             label12 = new Label();
             label11 = new Label();
+            TimeRentBox = new TextBox();
+            DepositBox = new TextBox();
+            label9 = new Label();
             Createprofile.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -130,7 +130,7 @@
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1092, 478);
+            tabPage1.Size = new Size(1092, 477);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "New Register";
             tabPage1.UseVisualStyleBackColor = true;
@@ -327,45 +327,46 @@
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(comboBox3);
+            tabPage3.Controls.Add(label9);
+            tabPage3.Controls.Add(DepositBox);
+            tabPage3.Controls.Add(TimeRentBox);
+            tabPage3.Controls.Add(HiredriverBox);
             tabPage3.Controls.Add(label18);
             tabPage3.Controls.Add(label17);
             tabPage3.Controls.Add(label16);
             tabPage3.Controls.Add(label15);
-            tabPage3.Controls.Add(comboBox2);
-            tabPage3.Controls.Add(comboBox1);
-            tabPage3.Controls.Add(textBox1);
-            tabPage3.Controls.Add(dataGridView2);
+            tabPage3.Controls.Add(SaleCode);
+            tabPage3.Controls.Add(DayRentBox);
             tabPage3.Controls.Add(buttonrent);
             tabPage3.Controls.Add(buttonclear);
             tabPage3.Controls.Add(label10);
             tabPage3.Controls.Add(label8);
-            tabPage3.Controls.Add(CM);
-            tabPage3.Controls.Add(CN);
+            tabPage3.Controls.Add(FindCarBox);
+            tabPage3.Controls.Add(FindIdBox);
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1092, 478);
+            tabPage3.Size = new Size(1092, 477);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Rent";
             tabPage3.UseVisualStyleBackColor = true;
             tabPage3.Click += tabPage3_Click;
             // 
-            // comboBox3
+            // HiredriverBox
             // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.ImeMode = ImeMode.Off;
-            comboBox3.Items.AddRange(new object[] { "FourSeatsCar", "Motobike", "PracticeDrivingCar", "TouristCar", "WeddingCar" });
-            comboBox3.Location = new Point(371, 105);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(265, 28);
-            comboBox3.TabIndex = 17;
+            HiredriverBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            HiredriverBox.FormattingEnabled = true;
+            HiredriverBox.ImeMode = ImeMode.Off;
+            HiredriverBox.Items.AddRange(new object[] { "Yes", "No" });
+            HiredriverBox.Location = new Point(516, 97);
+            HiredriverBox.Name = "HiredriverBox";
+            HiredriverBox.Size = new Size(177, 28);
+            HiredriverBox.TabIndex = 17;
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(371, 161);
+            label18.Location = new Point(699, 62);
             label18.Name = "label18";
             label18.Size = new Size(105, 20);
             label18.TabIndex = 16;
@@ -374,7 +375,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(371, 70);
+            label17.Location = new Point(516, 62);
             label17.Name = "label17";
             label17.Size = new Size(81, 20);
             label17.TabIndex = 15;
@@ -383,7 +384,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(74, 261);
+            label16.Location = new Point(172, 253);
             label16.Name = "label16";
             label16.Size = new Size(69, 20);
             label16.TabIndex = 14;
@@ -393,58 +394,38 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(371, 261);
+            label15.Location = new Point(516, 253);
             label15.Name = "label15";
-            label15.Size = new Size(61, 20);
+            label15.Size = new Size(120, 20);
             label15.TabIndex = 13;
-            label15.Text = "Deposit";
+            label15.Text = "Time Rent (days)";
             label15.Click += label15_Click;
             // 
-            // comboBox2
+            // SaleCode
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.ImeMode = ImeMode.Off;
-            comboBox2.Items.AddRange(new object[] { "FourSeatsCar", "Motobike", "PracticeDrivingCar", "TouristCar", "WeddingCar" });
-            comboBox2.Location = new Point(371, 301);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(265, 28);
-            comboBox2.TabIndex = 12;
+            SaleCode.DropDownStyle = ComboBoxStyle.DropDownList;
+            SaleCode.FormattingEnabled = true;
+            SaleCode.ImeMode = ImeMode.Off;
+            SaleCode.Items.AddRange(new object[] { "SUMMER_TIME", "VACATION2023" });
+            SaleCode.Location = new Point(699, 98);
+            SaleCode.Name = "SaleCode";
+            SaleCode.Size = new Size(180, 28);
+            SaleCode.TabIndex = 11;
+            SaleCode.SelectedIndexChanged += comboBox1_SelectedIndexChanged_1;
             // 
-            // comboBox1
+            // DayRentBox
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.ImeMode = ImeMode.Off;
-            comboBox1.Items.AddRange(new object[] { "FourSeatsCar", "Motobike", "PracticeDrivingCar", "TouristCar", "WeddingCar" });
-            comboBox1.Location = new Point(371, 196);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(265, 28);
-            comboBox1.TabIndex = 11;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(74, 302);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(265, 27);
-            textBox1.TabIndex = 10;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(775, 43);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.RowTemplate.Height = 29;
-            dataGridView2.Size = new Size(272, 382);
-            dataGridView2.TabIndex = 9;
-            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
+            DayRentBox.Location = new Point(172, 294);
+            DayRentBox.Name = "DayRentBox";
+            DayRentBox.PlaceholderText = "dd/mm/yyyy";
+            DayRentBox.Size = new Size(321, 27);
+            DayRentBox.TabIndex = 10;
             // 
             // buttonrent
             // 
-            buttonrent.Location = new Point(422, 388);
+            buttonrent.Location = new Point(603, 380);
             buttonrent.Name = "buttonrent";
-            buttonrent.Size = new Size(141, 37);
+            buttonrent.Size = new Size(190, 37);
             buttonrent.TabIndex = 8;
             buttonrent.Text = "Rent";
             buttonrent.UseVisualStyleBackColor = true;
@@ -452,9 +433,9 @@
             // 
             // buttonclear
             // 
-            buttonclear.Location = new Point(139, 388);
+            buttonclear.Location = new Point(228, 380);
             buttonclear.Name = "buttonclear";
-            buttonclear.Size = new Size(141, 37);
+            buttonclear.Size = new Size(197, 37);
             buttonclear.TabIndex = 7;
             buttonclear.Text = "Clear";
             buttonclear.UseVisualStyleBackColor = true;
@@ -464,7 +445,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(70, 158);
+            label10.Location = new Point(168, 150);
             label10.Name = "label10";
             label10.Size = new Size(37, 23);
             label10.TabIndex = 6;
@@ -475,25 +456,26 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(70, 67);
+            label8.Location = new Point(168, 59);
             label8.Name = "label8";
-            label8.Size = new Size(139, 23);
+            label8.Size = new Size(110, 23);
             label8.TabIndex = 4;
-            label8.Text = "Customer Name";
+            label8.Text = "Customer ID";
+            label8.Click += label8_Click;
             // 
-            // CM
+            // FindCarBox
             // 
-            CM.Location = new Point(72, 196);
-            CM.Name = "CM";
-            CM.Size = new Size(265, 27);
-            CM.TabIndex = 2;
+            FindCarBox.Location = new Point(170, 188);
+            FindCarBox.Name = "FindCarBox";
+            FindCarBox.Size = new Size(321, 27);
+            FindCarBox.TabIndex = 2;
             // 
-            // CN
+            // FindIdBox
             // 
-            CN.Location = new Point(70, 106);
-            CN.Name = "CN";
-            CN.Size = new Size(265, 27);
-            CN.TabIndex = 0;
+            FindIdBox.Location = new Point(168, 98);
+            FindIdBox.Name = "FindIdBox";
+            FindIdBox.Size = new Size(321, 27);
+            FindIdBox.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -519,7 +501,7 @@
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(1092, 478);
+            tabPage4.Size = new Size(1092, 477);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Review";
             tabPage4.UseVisualStyleBackColor = true;
@@ -706,6 +688,29 @@
             label11.Text = "Customer Review";
             label11.Click += label11_Click;
             // 
+            // TimeRentBox
+            // 
+            TimeRentBox.Location = new Point(516, 294);
+            TimeRentBox.Name = "TimeRentBox";
+            TimeRentBox.Size = new Size(363, 27);
+            TimeRentBox.TabIndex = 18;
+            // 
+            // DepositBox
+            // 
+            DepositBox.Location = new Point(516, 188);
+            DepositBox.Name = "DepositBox";
+            DepositBox.Size = new Size(363, 27);
+            DepositBox.TabIndex = 19;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(516, 153);
+            label9.Name = "label9";
+            label9.Size = new Size(61, 20);
+            label9.TabIndex = 20;
+            label9.Text = "Deposit";
+            // 
             // Customerform
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -724,7 +729,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             tabPage4.ResumeLayout(false);
             tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -762,13 +766,12 @@
         private Label label4;
         private Label label3;
         private Button clearbutton;
-        private TextBox CM;
-        private TextBox CN;
+        private TextBox FindCarBox;
+        private TextBox FindIdBox;
         private Label label10;
         private Label label8;
         private Button buttonrent;
         private Button buttonclear;
-        private DataGridView dataGridView2;
         private Label label11;
         private Label label12;
         private DataGridView dataGridView3;
@@ -788,13 +791,15 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
+        private ComboBox SaleCode;
+        private TextBox DayRentBox;
         private Label label15;
         private Label label16;
         private Label label17;
         private Label label18;
-        private ComboBox comboBox3;
+        private ComboBox HiredriverBox;
+        private TextBox TimeRentBox;
+        private TextBox DepositBox;
+        private Label label9;
     }
 }
