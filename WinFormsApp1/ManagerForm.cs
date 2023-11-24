@@ -125,5 +125,104 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Done_Click(object sender, EventArgs e)
+        {
+            string title = CodeTittleBox.Text;
+            string description = Descriptionbox.Text;
+            string startDate = StartDateBox.Text;
+            string endDate = EndDateBox.Text;
+            int discountPercentage = Int32.Parse(DiscountPersent.Text);
+            string occation = OccationBox.Text;
+
+            switch (Descriptionbox.Text)
+            {
+                case "Holiday":
+                    {
+                        new HolidayPromotion(occation, title, description, startDate, endDate, discountPercentage);
+                        break;
+
+                    }
+                case "Seasonal_Increase":
+                    {
+                        new SeasonalPriceIncrease(title, description, startDate, endDate, discountPercentage, occation);
+                        break;
+
+                    }
+                case "Seasonal_Decrease":
+                    {
+                        new SeasonalPriceIncrease( title, description, startDate, endDate, discountPercentage, occation);
+                        break;
+
+                    }
+                case "Customer Loyalty":
+                    {
+                        new CustomerLoyaltyDiscount(title, description, startDate, endDate, discountPercentage);
+                        break;
+
+                    }
+
+
+            }
+
+
+        }
+
+        private void Descriptionbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (Descriptionbox.Text)
+            {
+                case "Holiday":
+                    {
+                        OccationBox.Hide();
+                        SeasonLabel.Hide();
+                        OccationLabel.Hide();
+                        break;
+
+                    }
+                case "Seasonal_Increase":
+                    {
+                        OccationBox.Show();
+                        SeasonLabel.Show();
+                        OccationLabel.Hide();
+                        break;
+
+                    }
+                case "Seasonal_Decrease":
+                    {
+                        OccationBox.Show();
+                        SeasonLabel.Show();
+                        OccationLabel.Hide();
+                        break;
+
+                    }
+
+            }
+
+            
+
+        }
+
+        private void ManagerForm_Load(object sender, EventArgs e)
+        {
+            OccationBox.Hide();
+            SeasonLabel.Hide();
+            OccationLabel.Hide();
+        }
     }
 }

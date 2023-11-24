@@ -6,7 +6,7 @@
         get { return season; }
         set { season = value; }
     }
-    public SeasonalPriceIncrease(string occasion, string title, string description, string startDate, string endDate, int discountPercentage, string season) : base(title, description, startDate, endDate, discountPercentage)
+    public SeasonalPriceIncrease( string title, string description, string startDate, string endDate, int discountPercentage, string season) : base(title, description, startDate, endDate, discountPercentage)
     {
         this.season = season;
     }
