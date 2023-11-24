@@ -214,10 +214,7 @@ namespace WinFormsApp1
 
             }
 
-            
-
         }
-
         private void ManagerForm_Load(object sender, EventArgs e)
         {
             OccationBox.Hide();
