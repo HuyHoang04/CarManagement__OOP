@@ -38,8 +38,8 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(235, 227, 213);
-            button1.Location = new Point(244, 271);
+            button1.BackColor = SystemColors.AppWorkspace;
+            button1.Location = new Point(187, 237);
             button1.Name = "button1";
             button1.Size = new Size(287, 146);
             button1.TabIndex = 0;
@@ -49,8 +49,8 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(235, 227, 213);
-            button2.Location = new Point(659, 271);
+            button2.BackColor = SystemColors.AppWorkspace;
+            button2.Location = new Point(602, 237);
             button2.Name = "button2";
             button2.Size = new Size(287, 146);
             button2.TabIndex = 1;
@@ -60,12 +60,13 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(176, 166, 149);
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.BackgroundImage = global::ManagerForm.Properties.Resources.Size;
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(35, 12);
+            panel1.Location = new Point(2, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1235, 573);
+            panel1.Size = new Size(1099, 573);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
@@ -73,9 +74,10 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(119, 107, 93);
-            ClientSize = new Size(1297, 597);
+            BackColor = SystemColors.InactiveCaptionText;
+            ClientSize = new Size(1102, 577);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Menu";
             Text = "Menu";
             panel1.ResumeLayout(false);
