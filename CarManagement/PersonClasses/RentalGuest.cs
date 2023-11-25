@@ -6,7 +6,7 @@ public class RentalGuest : Person
     public static List<RentalGuest> All = new List<RentalGuest>();
     public RentalGuest (string customername, int id, string dob, string address, string phonenumber) : base (customername, id, dob, address, phonenumber)
     {
-       All.Add(this);
+
     }
     public string Customername
     {

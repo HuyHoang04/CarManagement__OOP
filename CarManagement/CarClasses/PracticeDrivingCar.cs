@@ -1,7 +1,5 @@
 ﻿public class PracticeDrivingCar : Vehicle
 {
-    private double onedayrentprice = 1000000;
-    private double priceperkm = 3800;
     private int backupbrakemoney = 150000;
     private int backupbrake;
 
@@ -9,10 +7,12 @@
     {
         get { return backupbrake; }
     }
-    public PracticeDrivingCar(int cartype, string namepurpose, string brand, int buyyear, int kmgo, int insurant, int backupbrake)
-        : base(cartype, namepurpose, brand, buyyear, kmgo, insurant)
+    public PracticeDrivingCar(Owner owner, int cartype, string namepurpose, string brand, int buyyear, int kmgo, int insurant, int backupbrake)
+        : base(owner, cartype, namepurpose, brand, buyyear, kmgo, insurant)
     {
         this.backupbrake = backupbrake;
+        this.onedayrentprice = 1000000;
+        this.priceperkm = 3800;
     }
     public override double rentcostofcar(int timerentcar)
     {

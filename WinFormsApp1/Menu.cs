@@ -7,45 +7,30 @@ namespace WinFormsApp1
 {
     public partial class Menu : Form
     {
-        List<CostsIncurred> costsIncurreds = new List<CostsIncurred>();
-
-        FourSeatsCar MazdaCX5 = new FourSeatsCar(2, "Travel", "Mazda", 2014, 2200, 100000,1);
-        Motobike Vision = new Motobike(2, "Travel", "Honda", 2019, 990, 160000,1);
-        PracticeDrivingCar Toyota = new PracticeDrivingCar(3, "Practice", "Honda Civic", 2019, 1200, 160000,1);
-        TouristCar Hyundai = new TouristCar(2, "Travel", "Ford Transit", 2020, 2000, 350000,1);
-        WeddingCar Camry = new WeddingCar(1, "Wedding", "Toyota Camry", 2018, 3000, 150000,1);
-
-
-        RentalGuest guest1 = new RentalGuest("Nguyen Huu Danh", 0682004862, "20/04/1999", "DaLat", "0979897979");
-        RentalGuest guest2 = new RentalGuest("Tran Thanh Vy", 0938475612, "15/08/1995", "Nha Trang", "0987654321");
-        RentalGuest guest3 = new RentalGuest("Pham Thi Nga", 0789456123, "05/06/1985", "Hanoi", "0901234567");
-        RentalGuest guest4 = new RentalGuest("Nguyen Minh Hieu", 0987654321, "22/02/1994", "Buon Ma Thuot", "0990123456");
-        RentalGuest guest5 = new RentalGuest("Phan Minh Tu", 0587413690, "12/09/1997", "Can Tho", "0956789012");
-
-        CustomerReview guest1review = new CustomerReview("Vinh", "Reviewforservice", "Good", 5, "20/06/2024");
-        CustomerReview guest2review = new CustomerReview("Vy", "Reviewforservice", "Good", 5, "02/07/2024");
-        CustomerReview guest3review = new CustomerReview("Nga", "Reviewforservice", "No Comment", 5, "28/06/2024");
-        CustomerReview guest4review = new CustomerReview("Hieu", "Reviewforservice", "Good", 5, "13/08/2024");
-        CustomerReview guest5review = new CustomerReview("Tu", "Reviewforservice", "No Comment", 5, "22/08/2024");
-
-        OwnerReview HoangReview = new OwnerReview("Hoang", "Nice & Friendly", "Traveler", "Cheap car rental in Da Lat", 5, "02/03/2023");
-
-        ReviewForCar reviewforWeddingCar = new ReviewForCar("Camry", "Good", 850000, "Rent Wedding Car", " New and clean", 5, "30/06/2024");
-        ReviewForCar reviewforMotbike = new ReviewForCar("Vision", "Good", 850000, "Rent Motiobike ", " New and clean", 5, "30/06/2024");
-        ReviewForCar reviewforTouristCar = new ReviewForCar("Mustang", "Good", 850000, "Rent Wedding Car", "New and clean", 5, "30/06/2024");
-        ReviewForCar reviewforFourseatCar = new ReviewForCar("Ford Transit", "Good", 850000, "Rent Wedding Car", "New and clean", 5, "30/06/2024");
-        ReviewForCar reviewforPracticeCar = new ReviewForCar("BMW", "Good", 850000, "Rent Wedding Car", "New and clean", 5, "30/06/2024");
-        HolidayPromotion Summer = new HolidayPromotion("Summer Time", "Vacation Vibing", "Summer 50% sale", "07/07/2022", "08/08/2022", 50);
-
+        Owner Hoang = new Owner("La Huy Hoang", 0382004367, "10/01/1967", "DaLat", "0363892999");
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Contract CarRental = new Contract(500000, "01/11/2023", true, MazdaCX5, costsIncurreds, Hoang, guest1, Summer, guest1review, HoangReview, reviewforWeddingCar);
-            //Contract CarRental2 = new Contract(600000, "05/12/2023", true, Vision, costsIncurreds, Hoang, guest2, Summer, guest2review, HoangReview, reviewforMotbike);
-            //Contract CarRental3 = new Contract(700000, "20/01/2024", true, Toyota, costsIncurreds, Hoang, guest3, Summer, guest3review, HoangReview, reviewforPracticeCar);
-            //Contract CarRental4 = new Contract(800000, "15/03/2024", true, Hyundai, costsIncurreds, Hoang, guest4, Summer, guest4review, HoangReview, reviewforTouristCar);
-            //Contract CarRental5 = new Contract(900000, "10/05/2024", true, Camry, costsIncurreds, Hoang, guest5, Summer, guest5review, HoangReview, reviewforFourseatCar);
+            Owner Hoang = new Owner("La Huy Hoang", 0382004367, "10/01/1967", "DaLat", "0363892999");
 
+            Vehicle.All.Add(new FourSeatsCar(Hoang, 2, "Travel", "Mazda", 2014, 2200, 100000, 1));
+            Vehicle.All.Add(new Motobike(Hoang, 2, "Travel", "Honda", 2019, 990, 160000, 1));
+            Vehicle.All.Add(new PracticeDrivingCar(Hoang, 3, "Practice", "Honda Civic", 2019, 1200, 160000, 1));
+            Vehicle.All.Add(new TouristCar(Hoang, 2, "Travel", "Ford Transit", 2020, 2000, 350000, 1));
+
+            RentalGuest.All.Add(new RentalGuest("Nguyen Huu Danh", 123123123, "20/04/1999", "DaLat", "0979897979"));
+            RentalGuest.All.Add(new RentalGuest("Tran Thanh Vy", 0938475612, "15/08/1995", "Nha Trang", "0987654321"));
+            RentalGuest.All.Add(new RentalGuest("Pham Thi Nga", 0789456123, "05/06/1985", "Hanoi", "0901234567"));
+            RentalGuest.All.Add(new RentalGuest("Nguyen Minh Hieu", 0987654321, "22/02/1994", "Buon Ma Thuot", "0990123456"));
+            RentalGuest.All.Add(new RentalGuest("Phan Minh Tu", 0587413690, "12/09/1997", "Can Tho", "0956789012"));
+
+            Review.All.Add(new Review("Vinh", "Reviewforservice", "Camry", "Good", 5, "20/06/2024"));
+            Review.All.Add(new Review("Vy", "Reviewforservice", "Vision", "Good", 5, "02/07/2024"));
+            Review.All.Add(new Review("Nga", "Reviewforservice", "Hyundai", "No Comment", 5, "28/06/2024"));
+            Review.All.Add(new Review("Hieu", "Reviewforservice", "MazadaCX5", "Good", 5, "13/08/2024"));
+            Review.All.Add(new Review("Tu", "Reviewforservice", "Toyota", "No Comment", 5, "22/08/2024"));
+
+            SaleOff.Sale.Add(new HolidayPromotion("Summer Time", "Vacation Vibing", "Summer 50% sale", "07/07/2022", "08/08/2022", 50));
         }
 
 

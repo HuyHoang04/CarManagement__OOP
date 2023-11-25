@@ -6,12 +6,8 @@
     private Vehicle vehicle;
     private int timerent;
     private List <CostsIncurred> costsIncurred ;
-    private Owner owner;
     private RentalGuest rentalGuest;
     private SaleOff saleoff;
-    private CustomerReview customerReview;
-    private OwnerReview ownerReview;
-    private ReviewForCar reviewForCar;
     public static int counts;
 
     public double Deposit
@@ -35,13 +31,13 @@
         set { rentalGuest = value; }
     }
 
-    public Contract(double deposit, string daterental, bool hiredriver, Vehicle vehicle, Owner owner, RentalGuest rentalGuest, SaleOff saleoff, int timerent)
+    public static List<Contract> All = new List<Contract>();
+    public Contract(double deposit, string daterental, bool hiredriver, Vehicle vehicle, RentalGuest rentalGuest, SaleOff saleoff, int timerent)
     {
         this.deposit = deposit;
         this.daterental = ToDateTime.Convert(daterental);
         this.hiredriver = hiredriver;
         this.vehicle = vehicle;
-        this.owner = owner;
         this.rentalGuest = rentalGuest;
         this.saleoff = saleoff;
         this.timerent = timerent;
@@ -60,15 +56,11 @@
     public void InfoConstract()
     {
         vehicle.Display();
-        owner.Display();
         rentalGuest.Display();
         Console.WriteLine($"Rentpriceinconstract: {Rentpriceinconstract()}");
     }
     public double ReturnConstract()
     {
-        customerReview.Display();
-        ownerReview.Display();
-        reviewForCar.Display();
         double totalincludeprice = 0;
         if ( costsIncurred.Count()!= 0)
         {

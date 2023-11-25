@@ -51,17 +51,7 @@ namespace ManagerForm
         private void SearchButton_Click(object sender, EventArgs e)
         {
 
-            var q = from u in RentalGuest.All
-                    where u.ID.ToString() == SearchID.Text
-                    select u;
-
-            List<RentalGuest> list = q.ToList();
-            if (list.Count == 0)
-            {
-                MessageBox.Show("Profile doesn't exist, go to create in new register !");
-            }
-
-            dataGridView1.DataSource = list;
+           
 
         }
 
@@ -72,7 +62,7 @@ namespace ManagerForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = RentalGuest.All;
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -102,7 +92,7 @@ namespace ManagerForm
 
         private void donebutton_Click(object sender, EventArgs e)
         {
-            new RentalGuest(nameinput.Text, Int32.Parse(idinput.Text), dobinput.Text, addressinput.Text, phonenumberinput.Text);
+            RentalGuest.All.Add(new RentalGuest(nameinput.Text, Int32.Parse(idinput.Text), dobinput.Text, addressinput.Text, phonenumberinput.Text));
             nameinput.Clear();
             idinput.Clear();
             dobinput.Clear();
@@ -136,7 +126,10 @@ namespace ManagerForm
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            FindIdBox.Clear();
+            DayRentBox.Clear();
+            DepositBox.Clear();
+            TimeRentBox.Clear();
         }
 
         private void buttonrent_Click(object sender, EventArgs e)
@@ -147,7 +140,7 @@ namespace ManagerForm
             string ttimerent = TimeRentBox.Text;
 
             int id = Int32.Parse(tid);
-            string car = FindCarBox.Text;
+            string car = comboBox1.Text;
             string dayrent = DayRentBox.Text;
             bool hiredriver = false;
             if (thiredriver == "Yes") hiredriver = true;
@@ -159,12 +152,11 @@ namespace ManagerForm
             Vehicle vehicle = Vehicle.All.Find(x => x.Brand == car);
             SaleOff sale = SaleOff.Sale.Find(x => x.title == salecode);
             Owner Hoang = new Owner("Hoang", 4567890, "34/12/2003", "23 NewYork streets", "23456789");
-            new Contract(deposit, dayrent, hiredriver, vehicle, Hoang, RentG, sale, timerent);
+            Contract.All.Add(new Contract(deposit, dayrent, hiredriver, vehicle, RentG, sale, timerent));
 
             FindIdBox.Clear();
             DepositBox.Clear();
             TimeRentBox.Clear();
-            FindCarBox.Clear();
             DayRentBox.Clear();
         }
 
@@ -180,13 +172,18 @@ namespace ManagerForm
 
         private void Reviewclear_Click(object sender, EventArgs e)
         {
-
+            NameCT.Clear();
+            Contentbox.Clear();
+            Titlebox.Clear();
+            Datepostbox.Clear();
         }
 
         private void Reviewdone_Click(object sender, EventArgs e)
         {
-
-
+            NameCT.Clear();
+            Contentbox.Clear();
+            Titlebox.Clear();
+            Datepostbox.Clear();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -270,6 +267,42 @@ namespace ManagerForm
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FindIdBox_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            var q = from u in RentalGuest.All
+                    where u.ID.ToString() == searchbutton.Text
+                    select u;
+
+            List<RentalGuest> list = q.ToList();
+            if (list.Count == 0)
+            {
+                MessageBox.Show("Profile doesn't exist, go to create in new register !");
+            }
+
+            dataGridView2.DataSource = list;
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DayRentBox_TextChanged(object sender, EventArgs e)
         {
 
         }

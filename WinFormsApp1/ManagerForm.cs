@@ -43,12 +43,15 @@ namespace WinFormsApp1
 
         private void donebutton_Click(object sender, EventArgs e)
         {
+
+
             string a = comboBox1.Text;
             switch (a)
             {
                 case "Four Seats Car ":
                     {
-                        new FourSeatsCar(Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text));
+
+                        Vehicle.All.Add(new FourSeatsCar(MyData.Hoang, Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text)));
                         levelbox.Clear();
                         purposebox.Clear();
                         brandbox.Clear();
@@ -60,7 +63,7 @@ namespace WinFormsApp1
                     }
                 case "Motobike ":
                     {
-                        new Motobike(Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text));
+                        Vehicle.All.Add(new Motobike(MyData.Hoang, Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text)));
                         levelbox.Clear();
                         purposebox.Clear();
                         brandbox.Clear();
@@ -72,7 +75,7 @@ namespace WinFormsApp1
                     }
                 case "Practice Driving Car ":
                     {
-                        new PracticeDrivingCar(Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text));
+                        Vehicle.All.Add(new PracticeDrivingCar(MyData.Hoang, Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text)));
                         levelbox.Clear();
                         purposebox.Clear();
                         brandbox.Clear();
@@ -84,7 +87,7 @@ namespace WinFormsApp1
                     }
                 case "Tourist Car ":
                     {
-                        new TouristCar(Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text));
+                        Vehicle.All.Add(new TouristCar(MyData.Hoang, Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text)));
                         levelbox.Clear();
                         purposebox.Clear();
                         brandbox.Clear();
@@ -96,7 +99,7 @@ namespace WinFormsApp1
                     }
                 case "Wedding Car ":
                     {
-                        new WeddingCar(Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text));
+                        Vehicle.All.Add(new WeddingCar(MyData.Hoang, Int32.Parse(levelbox.Text), purposebox.Text, brandbox.Text, Int32.Parse(buybox.Text), Int32.Parse(kmbox.Text), Int32.Parse(insurantbox.Text), Int32.Parse(specialbox.Text)));
                         levelbox.Clear();
                         purposebox.Clear();
                         brandbox.Clear();
@@ -207,28 +210,28 @@ namespace WinFormsApp1
             {
                 case "Holiday":
                     {
-                        new HolidayPromotion(occation, title, description, startDate, endDate, discountPercentage);
+                        SaleOff.Sale.Add(new HolidayPromotion(occation, title, description, startDate, endDate, discountPercentage));
                         SaleGridView.DataSource = SaleOff.Sale;
                         break;
 
                     }
                 case "Seasonal_Increase":
                     {
-                        new SeasonalPriceIncrease(title, description, startDate, endDate, discountPercentage, occation);
+                        SaleOff.Sale.Add(new SeasonalPriceIncrease(title, description, startDate, endDate, discountPercentage, occation));
                         SaleGridView.DataSource = SaleOff.Sale;
                         break;
 
                     }
                 case "Seasonal_Decrease":
                     {
-                        new SeasonalPriceIncrease(title, description, startDate, endDate, discountPercentage, occation);
+                        SaleOff.Sale.Add(new SeasonalPriceIncrease(title, description, startDate, endDate, discountPercentage, occation));
                         SaleGridView.DataSource = SaleOff.Sale;
                         break;
 
                     }
                 case "Customer Loyalty":
                     {
-                        new CustomerLoyaltyDiscount(title, description, startDate, endDate, discountPercentage);
+                        SaleOff.Sale.Add(new CustomerLoyaltyDiscount(title, description, startDate, endDate, discountPercentage));
                         SaleGridView.DataSource = SaleOff.Sale;
                         break;
 
@@ -300,6 +303,11 @@ namespace WinFormsApp1
             EndDateBox.Clear();
             DiscountPersent.Clear();
             OccationBox.Clear();
+        }
+
+        private void levelbox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

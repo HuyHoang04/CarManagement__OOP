@@ -5,7 +5,7 @@
     protected DateTime startDate;
     protected DateTime endDate;
     protected int discountPercentage;
-    public static List<SaleOff> Sale = new List<SaleOff>();
+
 
     public string Title
     {
@@ -32,6 +32,7 @@
         get { return discountPercentage;}
     }
 
+    public static List<SaleOff> Sale = new List<SaleOff>();
     public SaleOff (string title, string description, string startDate, string endDate, int discountPercentage)
     {
         this.title = title;
@@ -39,7 +40,6 @@
         this.startDate = ToDateTime.Convert(startDate);
         this.endDate = ToDateTime.Convert(endDate);
         this.discountPercentage = discountPercentage;
-        Sale.Add(this);
     }
     public virtual void Display()
     {

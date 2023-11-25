@@ -216,6 +216,7 @@
             levelbox.Name = "levelbox";
             levelbox.Size = new Size(224, 28);
             levelbox.TabIndex = 28;
+            levelbox.TextChanged += levelbox_TextChanged;
             // 
             // label11
             // 
@@ -289,7 +290,7 @@
             // 
             clearbutton.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             clearbutton.ForeColor = SystemColors.ActiveCaptionText;
-            clearbutton.Location = new Point(126, 576);
+            clearbutton.Location = new Point(93, 576);
             clearbutton.Name = "clearbutton";
             clearbutton.Size = new Size(172, 45);
             clearbutton.TabIndex = 20;
@@ -431,7 +432,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Agency FB", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.Location = new Point(155, 54);
+            label14.Location = new Point(155, 45);
             label14.Name = "label14";
             label14.Size = new Size(174, 53);
             label14.TabIndex = 31;

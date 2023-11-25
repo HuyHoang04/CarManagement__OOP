@@ -6,8 +6,10 @@
     protected int buyyear;
     protected int kmgo;
     protected int insurant;
-    public static List<Vehicle> All = new List<Vehicle>();
     protected int cartypestandardmoney = 5000000;
+    protected double onedayrentprice ;
+    protected double priceperkm ;
+    protected Owner owner;
 
     public int Cartype
     {
@@ -33,20 +35,17 @@
     {
         get { return insurant; }
     }
-   
-  
 
-
-    public Vehicle(int cartype, string namepurpose, string brand, int buyyear, int kmgo, int insurant)
+    public static List<Vehicle> All = new List<Vehicle>();
+    public Vehicle (Owner owner, int cartype, string namepurpose, string brand, int buyyear, int kmgo, int insurant)
     {
+        this.owner = owner;
         this.cartype = cartype;
         this.namepurpose = namepurpose;
         this.brand = brand;
         this.buyyear = (int)DateTime.Now.Year - buyyear;
         this.kmgo = kmgo;
         this.insurant = insurant;
-        All.Add(this);
-
     }
     public virtual double rentcostofcar(int timerentcar)
     {

@@ -3,6 +3,9 @@
     private string title;
     private string content;
     private int rating;
+    private string vehicleModel;
+    private string experience;
+    private int price;
     private DateTime datePosted;
 
     public string Title
@@ -25,12 +28,31 @@
         get { return datePosted; }
         set { datePosted = value; }
     }
-    public Review (string title, string content, int rating , string datePosted)
+    public string VehicleModel
+    {
+        get { return vehicleModel; }
+        set { vehicleModel = value; }
+    }
+    public string Experience
+    {
+        get { return experience; }
+        set { experience = value; }
+    }
+    public int Price
+    {
+        get { return price; }
+        set { price = value; }
+    }
+    public static List<Review> All = new List<Review>();
+    public Review (string title, string content, string vehicleModel, string experience, int rating , string datePosted)
     {
         this.title = title;
         this.content = content;
+        this.vehicleModel = vehicleModel;
+        this.experience = experience;
         this.rating = rating;
         this.datePosted = ToDateTime.Convert(datePosted);
+
     }
     public virtual void Display()
     {
