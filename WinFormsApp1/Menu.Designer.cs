@@ -34,6 +34,7 @@
             button2 = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -53,6 +54,7 @@
             // 
             // button2
             // 
+            button2.AutoSize = true;
             button2.BackColor = Color.Gray;
             button2.Font = new Font("Agency FB", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ButtonHighlight;
@@ -71,9 +73,9 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(3, 3);
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1100, 577);
+            panel1.Size = new Size(1101, 575);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
@@ -91,13 +93,16 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = SystemColors.InactiveCaptionText;
             ClientSize = new Size(1102, 574);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Menu";
             Text = "Menu";
+            Load += Form1_Load;
+            Resize += Menu_Resize;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -108,5 +113,6 @@
         private Button button2;
         private Panel panel1;
         private PictureBox pictureBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

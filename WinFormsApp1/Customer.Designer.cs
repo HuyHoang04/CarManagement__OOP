@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             tabPage4 = new TabPage();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -54,7 +54,6 @@
             label19 = new Label();
             dataGridView2 = new DataGridView();
             comboBox1 = new ComboBox();
-            label12 = new Label();
             searchbutton = new Button();
             label9 = new Label();
             DepositBox = new TextBox();
@@ -101,6 +100,7 @@
             // 
             // tabPage4
             // 
+            tabPage4.BackColor = Color.Black;
             tabPage4.Controls.Add(pictureBox5);
             tabPage4.Controls.Add(pictureBox4);
             tabPage4.Controls.Add(pictureBox3);
@@ -119,13 +119,13 @@
             tabPage4.Controls.Add(Reviewclear);
             tabPage4.Controls.Add(dataGridView3);
             tabPage4.Controls.Add(label11);
+            tabPage4.ForeColor = SystemColors.ActiveCaptionText;
             tabPage4.Location = new Point(4, 37);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
             tabPage4.Size = new Size(1487, 639);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Review";
-            tabPage4.UseVisualStyleBackColor = true;
             tabPage4.Click += tabPage4_Click;
             // 
             // pictureBox5
@@ -187,6 +187,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.ForeColor = SystemColors.ButtonHighlight;
             label14.Location = new Point(474, 378);
             label14.Name = "label14";
             label14.Size = new Size(72, 36);
@@ -197,6 +198,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.ForeColor = SystemColors.ButtonHighlight;
             label13.Location = new Point(474, 267);
             label13.Name = "label13";
             label13.Size = new Size(95, 36);
@@ -207,6 +209,7 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label21.ForeColor = SystemColors.ButtonHighlight;
             label21.Location = new Point(474, 144);
             label21.Name = "label21";
             label21.Size = new Size(84, 36);
@@ -217,6 +220,7 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label22.ForeColor = SystemColors.ButtonHighlight;
             label22.Location = new Point(73, 264);
             label22.Name = "label22";
             label22.Size = new Size(53, 36);
@@ -227,6 +231,7 @@
             // 
             label20.AutoSize = true;
             label20.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label20.ForeColor = SystemColors.ButtonHighlight;
             label20.Location = new Point(73, 144);
             label20.Name = "label20";
             label20.Size = new Size(67, 36);
@@ -255,6 +260,7 @@
             Contentbox.Name = "Contentbox";
             Contentbox.Size = new Size(262, 35);
             Contentbox.TabIndex = 8;
+            Contentbox.TextChanged += Contentbox_TextChanged;
             // 
             // NameCT
             // 
@@ -266,7 +272,8 @@
             // Reviewdone
             // 
             Reviewdone.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            Reviewdone.Location = new Point(419, 500);
+            Reviewdone.ForeColor = SystemColors.ActiveCaptionText;
+            Reviewdone.Location = new Point(530, 500);
             Reviewdone.Name = "Reviewdone";
             Reviewdone.Size = new Size(160, 64);
             Reviewdone.TabIndex = 6;
@@ -277,7 +284,8 @@
             // Reviewclear
             // 
             Reviewclear.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            Reviewclear.Location = new Point(192, 500);
+            Reviewclear.ForeColor = SystemColors.ActiveCaptionText;
+            Reviewclear.Location = new Point(109, 500);
             Reviewclear.Name = "Reviewclear";
             Reviewclear.Size = new Size(160, 64);
             Reviewclear.TabIndex = 5;
@@ -287,6 +295,8 @@
             // 
             // dataGridView3
             // 
+            dataGridView3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView3.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Location = new Point(829, 20);
             dataGridView3.Name = "dataGridView3";
@@ -300,6 +310,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Agency FB", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = SystemColors.ButtonHighlight;
             label11.Location = new Point(294, 39);
             label11.Name = "label11";
             label11.Size = new Size(184, 72);
@@ -309,10 +320,10 @@
             // 
             // tabPage3
             // 
+            tabPage3.BackColor = Color.Black;
             tabPage3.Controls.Add(label19);
             tabPage3.Controls.Add(dataGridView2);
             tabPage3.Controls.Add(comboBox1);
-            tabPage3.Controls.Add(label12);
             tabPage3.Controls.Add(searchbutton);
             tabPage3.Controls.Add(label9);
             tabPage3.Controls.Add(DepositBox);
@@ -330,19 +341,20 @@
             tabPage3.Controls.Add(label10);
             tabPage3.Controls.Add(label8);
             tabPage3.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            tabPage3.ForeColor = SystemColors.ButtonHighlight;
             tabPage3.Location = new Point(4, 37);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
             tabPage3.Size = new Size(1487, 639);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Rent Vehicle";
-            tabPage3.UseVisualStyleBackColor = true;
             tabPage3.Click += tabPage3_Click;
             // 
             // label19
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Agency FB", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            label19.ForeColor = SystemColors.ButtonHighlight;
             label19.Location = new Point(253, 40);
             label19.Name = "label19";
             label19.Size = new Size(313, 72);
@@ -351,33 +363,35 @@
             // 
             // dataGridView2
             // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = SystemColors.Window;
+            dataGridViewCellStyle5.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
             dataGridView2.Location = new Point(838, 23);
             dataGridView2.Name = "dataGridView2";
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Control;
-            dataGridViewCellStyle3.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = SystemColors.Control;
+            dataGridViewCellStyle6.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.RowTemplate.Height = 29;
             dataGridView2.Size = new Size(633, 601);
@@ -393,17 +407,9 @@
             comboBox1.Size = new Size(332, 36);
             comboBox1.TabIndex = 23;
             // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(159, 252);
-            label12.Name = "label12";
-            label12.Size = new Size(62, 28);
-            label12.TabIndex = 22;
-            label12.Text = "label12";
-            // 
             // searchbutton
             // 
+            searchbutton.ForeColor = SystemColors.ActiveCaptionText;
             searchbutton.Location = new Point(508, 180);
             searchbutton.Name = "searchbutton";
             searchbutton.Size = new Size(131, 54);
@@ -416,6 +422,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = SystemColors.ButtonHighlight;
             label9.Location = new Point(452, 303);
             label9.Name = "label9";
             label9.Size = new Size(68, 28);
@@ -468,6 +475,7 @@
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.ForeColor = SystemColors.ButtonHighlight;
             label18.Location = new Point(230, 505);
             label18.Name = "label18";
             label18.Size = new Size(111, 28);
@@ -478,6 +486,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.ForeColor = SystemColors.ButtonHighlight;
             label17.Location = new Point(54, 505);
             label17.Name = "label17";
             label17.Size = new Size(97, 28);
@@ -488,6 +497,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = SystemColors.ButtonHighlight;
             label16.Location = new Point(54, 398);
             label16.Name = "label16";
             label16.Size = new Size(80, 28);
@@ -499,6 +509,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.ForeColor = SystemColors.ButtonHighlight;
             label15.Location = new Point(452, 398);
             label15.Name = "label15";
             label15.Size = new Size(145, 28);
@@ -521,6 +532,7 @@
             // buttonrent
             // 
             buttonrent.Font = new Font("Agency FB", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonrent.ForeColor = SystemColors.ActiveCaptionText;
             buttonrent.Location = new Point(651, 520);
             buttonrent.Name = "buttonrent";
             buttonrent.Size = new Size(133, 53);
@@ -532,6 +544,7 @@
             // buttonclear
             // 
             buttonclear.Font = new Font("Agency FB", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonclear.ForeColor = SystemColors.ActiveCaptionText;
             buttonclear.Location = new Point(452, 520);
             buttonclear.Name = "buttonclear";
             buttonclear.Size = new Size(133, 53);
@@ -544,6 +557,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = SystemColors.ButtonHighlight;
             label10.Location = new Point(54, 303);
             label10.Name = "label10";
             label10.Size = new Size(39, 28);
@@ -555,6 +569,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.ButtonHighlight;
             label8.Location = new Point(159, 152);
             label8.Name = "label8";
             label8.Size = new Size(105, 28);
@@ -564,6 +579,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.BackColor = Color.Black;
             tabPage1.Controls.Add(clearbutton);
             tabPage1.Controls.Add(donebutton);
             tabPage1.Controls.Add(label7);
@@ -584,11 +600,12 @@
             tabPage1.Size = new Size(1487, 639);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "New Register";
-            tabPage1.UseVisualStyleBackColor = true;
             // 
             // clearbutton
             // 
+            clearbutton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             clearbutton.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            clearbutton.ForeColor = SystemColors.ActiveCaptionText;
             clearbutton.Location = new Point(421, 459);
             clearbutton.Name = "clearbutton";
             clearbutton.Size = new Size(248, 68);
@@ -599,7 +616,9 @@
             // 
             // donebutton
             // 
+            donebutton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             donebutton.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            donebutton.ForeColor = SystemColors.ActiveCaptionText;
             donebutton.Location = new Point(782, 459);
             donebutton.Name = "donebutton";
             donebutton.Size = new Size(248, 68);
@@ -610,8 +629,10 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             label7.AutoSize = true;
             label7.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Location = new Point(782, 282);
             label7.Name = "label7";
             label7.Size = new Size(149, 36);
@@ -620,8 +641,10 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(824, 218);
             label6.Name = "label6";
             label6.Size = new Size(91, 36);
@@ -630,8 +653,10 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label5.AutoSize = true;
             label5.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.ButtonHighlight;
             label5.Location = new Point(161, 304);
             label5.Name = "label5";
             label5.Size = new Size(122, 36);
@@ -640,8 +665,10 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label4.AutoSize = true;
             label4.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(214, 246);
             label4.Name = "label4";
             label4.Size = new Size(33, 36);
@@ -651,8 +678,10 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Font = new Font("Agency FB", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(194, 188);
             label3.Name = "label3";
             label3.Size = new Size(67, 36);
@@ -662,8 +691,10 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Agency FB", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(499, 55);
             label2.Name = "label2";
             label2.Size = new Size(416, 72);
@@ -673,6 +704,7 @@
             // 
             // phonenumberinput
             // 
+            phonenumberinput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             phonenumberinput.Location = new Point(967, 282);
             phonenumberinput.Name = "phonenumberinput";
             phonenumberinput.Size = new Size(311, 35);
@@ -681,6 +713,7 @@
             // 
             // addressinput
             // 
+            addressinput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             addressinput.Location = new Point(967, 218);
             addressinput.Name = "addressinput";
             addressinput.Size = new Size(311, 35);
@@ -688,6 +721,7 @@
             // 
             // dobinput
             // 
+            dobinput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             dobinput.Location = new Point(326, 313);
             dobinput.Name = "dobinput";
             dobinput.Size = new Size(311, 35);
@@ -695,6 +729,7 @@
             // 
             // idinput
             // 
+            idinput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             idinput.Location = new Point(326, 255);
             idinput.Name = "idinput";
             idinput.Size = new Size(311, 35);
@@ -703,6 +738,7 @@
             // 
             // nameinput
             // 
+            nameinput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             nameinput.Location = new Point(326, 199);
             nameinput.Name = "nameinput";
             nameinput.Size = new Size(311, 35);
@@ -711,6 +747,7 @@
             // 
             // Createprofile
             // 
+            Createprofile.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             Createprofile.Controls.Add(tabPage1);
             Createprofile.Controls.Add(tabPage3);
             Createprofile.Controls.Add(tabPage4);
@@ -729,6 +766,7 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             ClientSize = new Size(1498, 684);
             Controls.Add(Createprofile);
+            ForeColor = SystemColors.ButtonHighlight;
             Name = "Customerform";
             Text = "Form1";
             Load += Customerform_Load;
@@ -756,7 +794,6 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private Label label14;
         private Label label13;
         private Label label21;
@@ -774,7 +811,6 @@
         private Label label19;
         private DataGridView dataGridView2;
         private ComboBox comboBox1;
-        private Label label12;
         private Button searchbutton;
         private Label label9;
         private TextBox DepositBox;
@@ -806,5 +842,6 @@
         private TextBox idinput;
         private TextBox nameinput;
         private TabControl Createprofile;
+        private PictureBox pictureBox1;
     }
 }

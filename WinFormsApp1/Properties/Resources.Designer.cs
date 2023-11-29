@@ -123,6 +123,16 @@ namespace ManagerForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap whitestar {
+            get {
+                object obj = ResourceManager.GetObject("whitestar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Yellow_Star {
             get {
                 object obj = ResourceManager.GetObject("Yellow Star", resourceCulture);

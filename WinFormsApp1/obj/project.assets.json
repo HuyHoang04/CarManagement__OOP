@@ -4414,11 +4414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\WinFormsApp1\\ManagerForm.csproj",
+      "projectUniqueName": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\WinFormsApp1\\ManagerForm.csproj",
       "projectName": "ManagerForm",
-      "projectPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\WinFormsApp1\\ManagerForm.csproj",
+      "projectPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\WinFormsApp1\\ManagerForm.csproj",
       "packagesPath": "C:\\Users\\HALO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\WinFormsApp1\\obj\\",
+      "outputPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HALO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4435,8 +4435,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\CarManagement\\CarManagement.csproj": {
-              "projectPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\CarManagement\\CarManagement.csproj"
+            "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\CarManagement\\CarManagement.csproj": {
+              "projectPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\CarManagement\\CarManagement.csproj"
             }
           }
         }

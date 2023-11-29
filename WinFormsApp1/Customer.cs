@@ -25,7 +25,8 @@ namespace ManagerForm
 
         private void Customerform_Load(object sender, EventArgs e)
         {
-
+            this.dataGridView2.DefaultCellStyle.ForeColor = Color.Black;
+            this.dataGridView3.DefaultCellStyle.ForeColor = Color.Black;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -51,7 +52,7 @@ namespace ManagerForm
         private void SearchButton_Click(object sender, EventArgs e)
         {
 
-           
+
 
         }
 
@@ -62,7 +63,7 @@ namespace ManagerForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -303,6 +304,11 @@ namespace ManagerForm
         }
 
         private void DayRentBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Contentbox_TextChanged(object sender, EventArgs e)
         {
 
         }

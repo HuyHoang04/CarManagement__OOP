@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\CarManagement\\CarManagement.csproj": {}
+    "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\CarManagement\\CarManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\CarManagement\\CarManagement.csproj": {
+    "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\CarManagement\\CarManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\CarManagement\\CarManagement.csproj",
+        "projectUniqueName": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\CarManagement\\CarManagement.csproj",
         "projectName": "CarManagement",
-        "projectPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\CarManagement\\CarManagement.csproj",
+        "projectPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\CarManagement\\CarManagement.csproj",
         "packagesPath": "C:\\Users\\HALO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\CarManagement__OOP\\CarManagement\\obj\\",
+        "outputPath": "C:\\Users\\HALO\\Desktop\\DSA\\Test OOP\\Hoang\\Final_____\\CarManagement__OOP\\CarManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HALO\\AppData\\Roaming\\NuGet\\NuGet.Config",

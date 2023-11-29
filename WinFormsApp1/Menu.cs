@@ -7,10 +7,14 @@ namespace WinFormsApp1
 {
     public partial class Menu : Form
     {
+        private Rectangle buttonOriginalRectangel;
+        private Rectangle originalFormSize;
         Owner Hoang = new Owner("La Huy Hoang", 0382004367, "10/01/1967", "DaLat", "0363892999");
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            originalFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Size.Width, this.Size.Height);
+            buttonOriginalRectangel = new Rectangle(button2.Location.X, button2.Location.Y, button2.Width, button2.Height);
             Owner Hoang = new Owner("La Huy Hoang", 0382004367, "10/01/1967", "DaLat", "0363892999");
 
             Vehicle.All.Add(new FourSeatsCar(Hoang, 2, "Travel", "Mazda", 2014, 2200, 100000, 1));
@@ -96,6 +100,32 @@ namespace WinFormsApp1
         {
             Customerform form = new Customerform();
             form.Show();
+        }
+
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+
+        }
+
+
+        private void resizeControl(Rectangle r , Control c)
+        {
+            float xRatio = (float)(this.Width) / (float)(originalFormSize.Width);
+            float yRatio = (float)(this.Height) / (float)(originalFormSize.Height);
+
+            int newX = (int)(r.Width * xRatio);
+            int newY = (int)(r.Height * yRatio);
+
+            int newWidth = (int)(r.Width * xRatio);
+            int newHeight = (int)(r.Height * yRatio);
+
+            c.Location = new Point(newX, newY);
+            c.Size = new Size(newWidth, newHeight);
+        }
+
+        private void Menu_Resize(object sender, EventArgs e)
+        {
+           
         }
     }
 }

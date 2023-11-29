@@ -72,7 +72,6 @@
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            tabPage3 = new TabPage();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)vehiclegridview).BeginInit();
@@ -82,15 +81,16 @@
             // 
             // tabControl1
             // 
+            tabControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
             tabControl1.Font = new Font("Agency FB", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             tabControl1.Location = new Point(2, 2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1379, 715);
             tabControl1.TabIndex = 0;
+            tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             // 
             // tabPage1
             // 
@@ -189,6 +189,7 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label7.AutoSize = true;
             label7.Font = new Font("Agency FB", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label7.Location = new Point(262, 49);
@@ -199,6 +200,8 @@
             // 
             // vehiclegridview
             // 
+            vehiclegridview.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            vehiclegridview.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             vehiclegridview.BackgroundColor = Color.DimGray;
             vehiclegridview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             vehiclegridview.Location = new Point(698, 37);
@@ -464,6 +467,8 @@
             // 
             // SaleGridView
             // 
+            SaleGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            SaleGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             SaleGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             SaleGridView.Location = new Point(494, 45);
             SaleGridView.Name = "SaleGridView";
@@ -553,16 +558,6 @@
             label8.TabIndex = 0;
             label8.Text = "CODE tittle";
             // 
-            // tabPage3
-            // 
-            tabPage3.Location = new Point(4, 37);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1371, 674);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Review";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
             // ManagerForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -596,7 +591,6 @@
         private Label label3;
         private Label label2;
         private TabPage tabPage2;
-        private TabPage tabPage3;
         private ComboBox comboBox1;
         private TextBox insurantbox;
         private Label label6;

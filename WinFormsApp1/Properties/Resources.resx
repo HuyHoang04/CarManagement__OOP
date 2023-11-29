@@ -118,11 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Yellow Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow Star.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="858751" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\858751.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Size" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Size.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,14 +136,11 @@
   <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z4899562433480_93e8923ce83291b814e18fc8d42b5693" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4899562433480_93e8923ce83291b814e18fc8d42b5693.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="White Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\White Star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Yellow Star.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z4899562433480_93e8923ce83291b814e18fc8d42b5693" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4899562433480_93e8923ce83291b814e18fc8d42b5693.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z4899562428940_466e2774343076552c10960c34caf66c (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z4899562428940_466e2774343076552c10960c34caf66c (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,7 +148,7 @@
   <data name="z4899562428940_466e2774343076552c10960c34caf66c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z4899562428940_466e2774343076552c10960c34caf66c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="whitestar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whitestar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
